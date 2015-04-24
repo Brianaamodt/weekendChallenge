@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>D&D Character Creater</title>
+    <meta name="description" content="Dungeons and Dragons">
+    <meta name="author" content="Brian Aamodt">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  
+  <body> 
+    <h1>Creature Stats</h1>
+    <div id="userInput">
+        <h2>Create Creature below</h2> 
+            <form id="inputForm">
+                <div id="attributes">
+                <label>Name: </label><input type= "text" id= "name"><br>
+                <label>Strength: </label><input type= "text" id= "strength"><br>
+                <label>Dexterity: </label><input type= "text" id= "dexterity"><br>
+                <label>Constitution: </label><input type= "text" id= "constitution"><br>
+                <label>Wisdom: </label><input type= "text" id= "wisdom"><br>
+                <label>Intelligence: </label><input type= "text" id= "intelligence"><br>
+                <label>Charisma: </label><input type= "text" id= "charisma"><br>
+    </div>
+      <div ="radioButton">
+                <label for="playerClass">Player Class (Optional)</label><br>
+                <input type="radio" name="class" value="Cleric" id ="playerClass" >Cleric<br>
+                <input type="radio" name="class" value="Fighter" id = "playerClass">Fighter<br>
+                <input type="radio" name="class" value="Wizard" id = "playerClass">Wizard<br>
+                <input type="radio" name="class" value="Rogue" = id="playerClass">Rogue<br>
+                <input type="radio" name="class" value="None" id= "playerClass">None<br>
+            </div>
+            <button type="button" id="addMonster">Add Creature</button>
+        </form>
+    </div>
+    <p id='recentAttack'>Click to attack</p>
+    <p id='criticalAttack'></p>
+    <table id ="stats">
+        <tr>
+            <th id='row1'>Name</th>
+            <th id='row1'>Strength</th>
+            <th id='row1'>Dexterity</th>
+            <th id='row1'>Constitution</th>
+            <th id='row1'>Wisdom</th>
+            <th id='row1'>Intelligence</th>
+            <th id='row1'>Charisma</th>
+            </tr>
+        </table>
+        <script src="appp.js"></script>
+    </body>
+    </html>
